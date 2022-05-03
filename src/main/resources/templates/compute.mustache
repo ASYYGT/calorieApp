@@ -1,10 +1,33 @@
-<title>My application</title>
- <h1>Hello, World!</h1>
- Result is {{result}}
- <form action="compute" method="post">
- <textarea name="input1" rows="10" cols="30"></textarea>
- <textarea name="input2" rows="10" cols="30"></textarea>
-    <textarea name="input3" rows="10" cols="30"></textarea>
+<meta charset="utf-8">
+<title>SampleWebApp</title>
+<form action="compute" method="post">
+ <h1>Kalan Yaşınızı Öğrenmek İster misiniz ?</h1>
+ 
+
+ <style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+  <hr>
+ <div>
+<h3 rows = "5" cols ="15"> Yasiniz </h3>
+<textarea name="input1"></textarea>
+ </div>
+ <hr>
+ <div>
+<h3 rows = "5" cols ="15"> Ağırlık: </h3>
+<textarea name="input2"></textarea>
+ </div>
+ <hr>
+ <div>
+<h3 rows = "5" cols ="15"> Boy: </h3>
+ <textarea name="input3" ></textarea>
+ </div>
+ 
  <br>
- <input type="submit">
+ <input type="submit" style = "text-align: center;">
+ <hr>
+ <h1 style="color:green">Harcanması Gereken Kalori:{{result}}  </h1>
+ <hr>
  </form>

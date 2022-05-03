@@ -32,8 +32,7 @@ public class App {
         port(getHerokuAssignedPort());
         get("/", (req, res) -> "Merhaba Dünya");
         post("/compute", (req, res) -> {
-            // System.out.println(req.queryParams("input1"));
-            // System.out.println(req.queryParams("input2"));
+            
             double yasInput = Integer.parseInt(req.queryParams("input1")) ;
             double sigaraInput = Integer.parseInt(req.queryParams("input2")) ;
             double sporInput = Integer.parseInt(req.queryParams("input3")) ;
